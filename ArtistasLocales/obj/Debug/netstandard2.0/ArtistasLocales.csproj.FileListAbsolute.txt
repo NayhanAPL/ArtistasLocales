@@ -1,0 +1,15 @@
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\ArtistasLocales.deps.json
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\ref\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\ArtistasLocales.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.csproj.AssemblyReference.cache
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.AssemblyInfoInputs.cache
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.AssemblyInfo.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.csproj.CoreCompileInputs.cache
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ref\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.pdb

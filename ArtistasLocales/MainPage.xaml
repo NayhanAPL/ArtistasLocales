@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistasLocales.MainPage">
+
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="160"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" Padding="15" Margin="0" HasShadow="True" BackgroundColor="White" BorderColor="Gray" CornerRadius="0">
+                <StackLayout>
+                    <Label Text="Artistas Locales" TextColor="CornflowerBlue" FontSize="34" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,10,0,19"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="0" x:Name="labelCantArtistas" TextColor="DimGray" FontSize="17" FontAttributes="Bold"/>
+                        <Label Text="Artistas" TextColor="DimGray" FontSize="17" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <Grid VerticalOptions="End">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="3" Text="Fav" x:Name="ButtonFavoritos" Clicked="ButtonFavoritos_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                        <Button Grid.Column="4" Text="O--" x:Name="ButtonBuscar" Clicked="ButtonBuscar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                        <Button Grid.Column="5" Text="III" x:Name="ButtonOrdenar" Clicked="ButtonOrdenar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <ListView Grid.Row="1" x:Name="listArtistas" ItemSelected="listArtistas_ItemSelected" RowHeight="100" SeparatorColor="Gray">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="perfil.jpeg" Margin="15" WidthRequest="70" HeightRequest="70"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Nombre}" Margin="10,10,0,0" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Manifestacion}" Margin="10,0,0,0" TextColor="DarkSlateGray" FontSize="16" FontAttributes="Italic"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </StackLayout>
+</ContentPage>
