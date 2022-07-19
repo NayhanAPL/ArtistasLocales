@@ -60,6 +60,7 @@ namespace ArtistasLocales
                 });
 
             }
+            //aqui deno pasarle a Ordenar la lista de la DB
             Ordenar(listArt);
             labelCantArtistas.Text = listArt.Count.ToString();
         }

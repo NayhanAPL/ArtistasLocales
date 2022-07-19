@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ArtistasLocales.MainPage">
-
     <StackLayout>
         <Grid>
             <Grid.RowDefinitions>
@@ -11,7 +10,7 @@
             </Grid.RowDefinitions>
             <Frame Grid.Row="0" Padding="15" Margin="0" HasShadow="True" BackgroundColor="White" BorderColor="Gray" CornerRadius="0">
                 <StackLayout>
-                    <Label Text="Artistas Locales" TextColor="CornflowerBlue" FontSize="34" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,10,0,19"/>
+                    <Label Text="Apolo" TextColor="CornflowerBlue" FontSize="38" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,10,0,15"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label Text="0" x:Name="labelCantArtistas" TextColor="DimGray" FontSize="17" FontAttributes="Bold"/>
                         <Label Text="Artistas" TextColor="DimGray" FontSize="17" FontAttributes="Bold"/>
