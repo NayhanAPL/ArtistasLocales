@@ -37,9 +37,9 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="perfil.jpeg" Margin="15" WidthRequest="70" HeightRequest="70"/>
-                                <StackLayout>
-                                    <Label Text="{Binding Nombre}" Margin="10,10,0,0" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
-                                    <Label Text="{Binding Manifestacion}" Margin="10,0,0,0" TextColor="DarkSlateGray" FontSize="16" FontAttributes="Italic"/>
+                                <StackLayout x:Name="stackNombre">
+                                    <Label Text="{Binding Principal}" Margin="10,10,0,0" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Segundario}" Margin="10,0,0,0" TextColor="DarkSlateGray" FontSize="16" FontAttributes="Italic"/>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
