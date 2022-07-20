@@ -16,3 +16,4 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstanda
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Ordenamiento.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Buscar.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\FiltroBuscar.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Perfil.xaml.g.cs

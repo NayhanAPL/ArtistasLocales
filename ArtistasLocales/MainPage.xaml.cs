@@ -17,6 +17,7 @@ namespace ArtistasLocales
             ByDefault();
         }
         public static List<Artistas> listArt = new List<Artistas>();
+        public static Artistas ArtSelected = new Artistas();
         public void ByDefault()
         {
             Inicio();
@@ -30,7 +31,7 @@ namespace ArtistasLocales
                     FechaNacimiento = new DateTime(2001, 2, 26),
                     ActividadProfecional = "Programador",
                     Correo = "nayhanprovedolabrada@gmail.com",
-                    Curriculo = "no tiene nada por ahora está tratando de conseguir su primer empleo, trabaja con hxamarin forms en la creacion de aplicaciones android",
+                    Curriculo = "no tiene nada por ahora está tratando de conseguir su primer empleo, trabaja con hxamarin forms en la creacion de aplicaciones android alsnscjlkas aslkascas asclkas clksacas caslkcnskc; a;lvm d rvr[ vrwv rv orpvwe,vwe;lvcsdpvewv dvlc als casl;c k; csakc ec ec ek ckc asc as;ck ascas c askc pacac, ascasc asckas caksc alskc askc ac sack sack sack ecev  vkv l;v adv dsv;ds vd;slv sd;v, svk v;v ds;v sd;v sdv; sdvsdv ;v sd;lv dsvk sv;d vsd;v dsv;, ;sv sdkv sva;cas c;v sdkvs dvklds vds vs dvklsd vdslkv sd v dvlsd vls vlksd vkld vdksv dsklv dv  dv ewlkg ewgk d svdsv svk dsv sdv dkv skv sdvl dsvl dsvl dsv   dsvksdlfkdsafnakslfjasklfasf dslf dslfksdfaslfasf;ioawfhlkanvdascpiejgkdsn;vkNFI:OEANFVDSKLv;naiefvfnae,dsnkcads .",
                     DireccionWeb = "nose/porahi/miraver/siencuentrasalgo/direc.www.com",
                     Fijo = "77974732",
                     Id = 1,
@@ -89,9 +90,10 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.Nombre,
-                        Segundario = item.FechaNacimiento.ToString()
+                        Segundario = item.FechaNacimiento.Day + "/" + item.FechaNacimiento.Month + "/" + item.FechaNacimiento.Year
                     });
-                }
+                };
+                
             }
             if (orden.Tipo == "Organizacion")
             {
@@ -103,6 +105,7 @@ namespace ArtistasLocales
                     {
                         organizaciones += elem.ToString() + ", ";
                     }
+                    organizaciones = organizaciones.Substring(0, organizaciones.Length - 2);
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = organizaciones,
@@ -120,6 +123,7 @@ namespace ArtistasLocales
                     {
                         proyectos += elem.Nombre + ", ";
                     }
+                    proyectos = proyectos.Substring(0, proyectos.Length - 2);
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.Nombre,
@@ -183,9 +187,13 @@ namespace ArtistasLocales
             });
         }
 
-        private void listArtistas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void listArtistas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            //hay que cambiar esto por la lista de la base de datos
+            var elem = (ListViewUsers)e.SelectedItem;
+            ArtSelected = listArt.Find(x => x.Nombre == elem.Principal);
+            if(ArtSelected == null) ArtSelected = listArt.Find(x => x.Nombre == elem.Segundario);
+            await Navigation.PushModalAsync(new Perfil());
         }
     }
 
