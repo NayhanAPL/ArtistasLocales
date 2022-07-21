@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HqNg2EGVNVzpkdcrlpYl0nUmmHnTmM99a9cRxaYNZu+mLSeQFnvV+DnpSv26uCDRskNwT4I9RtkE9sZkYYeh4Q==",
+  "dgSpecHash": "kWlfma22wIT8DXpXzjoTxwViX2MdDBbjLnPCNALpfVic+rIUw2J7RuV8qUc4I2S+8xvUBamK2ZkgGkHNHb/N5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nayhan\\source\\repos\\ArtistasLocales\\ArtistasLocales\\ArtistasLocales.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Nayhan\\.nuget\\packages\\xam.plugins.messaging\\5.2.0\\xam.plugins.messaging.5.2.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

@@ -24,9 +24,9 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="3" Text="Fav" x:Name="ButtonFavoritos" Clicked="ButtonFavoritos_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
-                        <Button Grid.Column="4" Text="O--" x:Name="ButtonBuscar" Clicked="ButtonBuscar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
-                        <Button Grid.Column="5" Text="III" x:Name="ButtonOrdenar" Clicked="ButtonOrdenar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                        <Button Grid.Column="3" Text="&#xf006;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonFavoritos" Clicked="ButtonFavoritos_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                        <Button Grid.Column="4" Text="&#xf002;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonBuscar" Clicked="ButtonBuscar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                        <Button Grid.Column="5" Text="&#xf00b;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonOrdenar" Clicked="ButtonOrdenar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                     </Grid>
                 </StackLayout>
             </Frame>
