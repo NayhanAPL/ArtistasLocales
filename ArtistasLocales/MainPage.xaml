@@ -8,10 +8,11 @@
                 <RowDefinition Height="160"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Frame Grid.Row="0" Padding="15" Margin="0" HasShadow="True" BackgroundColor="White" BorderColor="Gray" CornerRadius="0">
+            <Frame Grid.Row="0" Padding="15" Margin="0" BackgroundColor="White" BorderColor="Gray" CornerRadius="0">
                 <StackLayout>
-                    <Label Text="Apolo" TextColor="CornflowerBlue" FontSize="38" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,10,0,15"/>
+                    <Label Text="Apolo" TextColor="CornflowerBlue" FontSize="38" FontAttributes="Italic" HorizontalOptions="Center" Margin="0"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="Habana del Este" TextColor="DimGray" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,15"/>
                         <Label Text="0" x:Name="labelCantArtistas" TextColor="DimGray" FontSize="17" FontAttributes="Bold"/>
                         <Label Text="Artistas" TextColor="DimGray" FontSize="17" FontAttributes="Bold"/>
                     </StackLayout>
@@ -24,6 +25,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Text="&#xf12a;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="Info" Clicked="Info_Clicked" TextColor="Black" FontSize="19" FontAttributes="Bold" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                         <Button Grid.Column="3" Text="&#xf006;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonFavoritos" Clicked="ButtonFavoritos_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                         <Button Grid.Column="4" Text="&#xf002;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonBuscar" Clicked="ButtonBuscar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                         <Button Grid.Column="5" Text="&#xf00b;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonOrdenar" Clicked="ButtonOrdenar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>

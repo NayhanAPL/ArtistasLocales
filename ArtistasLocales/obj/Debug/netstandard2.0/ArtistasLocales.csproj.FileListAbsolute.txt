@@ -19,3 +19,6 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstanda
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Perfil.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\MensajeCorreo.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\LlamadaMovFijo.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Mensajes.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\PageFavoritos.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Info.xaml.g.cs
