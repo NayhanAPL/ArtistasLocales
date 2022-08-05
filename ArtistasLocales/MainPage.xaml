@@ -26,6 +26,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="0" Text="&#xf12a;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="Info" Clicked="Info_Clicked" TextColor="Black" FontSize="19" FontAttributes="Bold" BackgroundColor="White" CornerRadius="20" Padding="0"/>
+                        <Button Grid.Column="1" Text="&#xf56d;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="NewDB" Clicked="NewDB_Clicked" TextColor="Black" FontSize="19" FontAttributes="Bold" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                         <Button Grid.Column="3" Text="&#xf006;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonFavoritos" Clicked="ButtonFavoritos_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                         <Button Grid.Column="4" Text="&#xf002;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonBuscar" Clicked="ButtonBuscar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
                         <Button Grid.Column="5" Text="&#xf00b;" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonOrdenar" Clicked="ButtonOrdenar_Clicked" TextColor="Black" FontSize="15" BackgroundColor="White" CornerRadius="20" Padding="0"/>
@@ -38,7 +39,7 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Frame Margin="15" CornerRadius="35" WidthRequest="70" Padding="0" HeightRequest="70">
-                                    <Image Source="perfil.jpeg" x:Name="ImagenPerfil" WidthRequest="70" HeightRequest="70"/>
+                                    <Image Source="{Binding Foto}" x:Name="ImagenPerfil" WidthRequest="70" HeightRequest="70"/>
                                 </Frame>
                                 <StackLayout x:Name="stackNombre">
                                     <Label Text="{Binding Principal}" Margin="10,10,0,0" TextColor="Black" FontSize="22" FontAttributes="Bold"/>

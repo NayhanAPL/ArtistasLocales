@@ -21,3 +21,8 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstanda
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Mensajes.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\PageFavoritos.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\Info.xaml.g.cs
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\System.Drawing.Common.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Debug\netstandard2.0\ArtistasLocales.csproj.CopyComplete

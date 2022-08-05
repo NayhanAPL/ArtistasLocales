@@ -25,6 +25,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Extensions.Logging.dll",
 		"Microsoft.Extensions.Options.dll",
 		"Microsoft.Extensions.Primitives.dll",
+		"Plugin.Media.dll",
 		"Plugin.Messaging.Abstractions.dll",
 		"Plugin.Messaging.dll",
 		"Rg.Plugins.Popup.dll",

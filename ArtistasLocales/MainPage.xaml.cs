@@ -1,10 +1,16 @@
-﻿using Rg.Plugins.Popup.Extensions;
+﻿using ArtistasLocales;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+using Rg.Plugins.Popup.Extensions;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ArtistasLocales
@@ -14,107 +20,91 @@ namespace ArtistasLocales
         public MainPage()
         {
             InitializeComponent();
+            Inicio();
             ByDefault();
         }
         public static List<Artistas> listArt = new List<Artistas>();
         public static Artistas ArtSelected = new Artistas();
         public static List<Proyectos> listVin = new List<Proyectos>();
-        public void ByDefault()
-        {
-            Inicio();
-            
-            BusquedaDB();
-            for (int i = 0; i < 6; i++)
-                {
-                    listArt.Add(new Artistas()
-                    {
-                        Nombre = "Nayhan" + i,
-                        FechaNacimiento = new DateTime(2001, 2, 26),
-                        ActividadProfecional = "Programador",
-                        Correo = "nayhanprovedolabrada@gmail.com",
-                        Curriculo = "no tiene nada por ahora está tratando de conseguir su primer empleo, trabaja con hxamarin forms en la creacion de aplicaciones android alsnscjlkas aslkascas asclkas clksacas caslkcnskc; a;lvm d rvr[ vrwv rv orpvwe,vwe;lvcsdpvewv dvlc als casl;c k; csakc ec ec ek ckc asc as;ck ascas c askc pacac, ascasc asckas caksc alskc askc ac sack sack sack ecev  vkv l;v adv dsv;ds vd;slv sd;v, svk v;v ds;v sd;v sdv; sdvsdv ;v sd;lv dsvk sv;d vsd;v dsv;, ;sv sdkv sva;cas c;v sdkvs dvklds vds vs dvklsd vdslkv sd v dvlsd vls vlksd vkld vdksv dsklv dv  dv ewlkg ewgk d svdsv svk dsv sdv dkv skv sdvl dsvl dsvl dsv   dsvksdlfkdsafnakslfjasklfasf dslf dslfksdfaslfasf;ioawfhlkanvdascpiejgkdsn;vkNFI:OEANFVDSKLv;naiefvfnae,dsnkcads .",
-                        DireccionWeb = "https://www.google.ru/search",
-                        Fijo = "77974732",
-                        Id = i,
-                        Manifestacion = "Literatura",
-                        Movil = "58747585",
-                        Organizaciones = "ACAA, ICRT, ASCC, "
-                    });
-                    listVin.Add(new Proyectos()
-                    {
-                        Id = 1,
-                        Descripcion = "es una app para manejar informacion de artistas",
-                        Lugar = "Guanabacoa",
-                        Nombre = "ArtistasLocales",
-                        IdArt = i
-                    }
-                    );
 
-                    listArt.Add(new Artistas()
-                    {
-                        Nombre = "Susana" + (i + 6),
-                        FechaNacimiento = new DateTime(1992, 11, 21),
-                        ActividadProfecional = "FrontEnd",
-                        Correo = "susanabp1992@gmail.com",
-                        Curriculo = "ha trabajado para el sitio oficial del museo de vellas artes",
-                        DireccionWeb = "susy/porahi/miraver/siencuentrasalgo/direc.www.com",
-                        Fijo = "78324543",
-                        Id = i + 6,
-                        Manifestacion = "Disenno",
-                        Movil = "58237413",
-                        Organizaciones = "AHS, UPEC, "
-                    });
-                    listVin.AddRange(new List<Proyectos>()
-                {
-                    new Proyectos() { Id = 2, IdArt = (i + 6), Descripcion = "es una app para manejar informacion de artistas", Lugar = "Guanabacoa", Nombre = "ArtistasLocales" },
-                    new Proyectos() { Id = 3, IdArt = (i + 6), Descripcion = "Una aplicacion para el intercambio de bienes si uso de efectivo", Lugar = "Regla", Nombre = "Trueque" }
-                });
-                } // esto hay que sustituirlo por la consulta a la base de datos.
-            Ordenar(listArt);              // quitar de aqui
-            labelCantArtistas.Text = listArt.Count.ToString(); // quitar de aqui
-        }
-        private async void BusquedaDB()
+        public async void ByDefault()
         {
-            int res = 0;
-            string sqlite = "apolo";
-            VersionActual version = await App.Database.GetIdVersionActual(1);
-            if (version.Version == "0")
-            {
-                res = BuscarEnRegistros("apolo * .db");// expresion regular                
-            }
-            else
-            {
-                int limit = Convert.ToInt32(version.Version);
-                for (int i = limit + 10; i >= limit; i--)
-                {
-                    res = BuscarEnRegistros($"apolo{i}.db");
-                    if (res != 0) break;                    
-                }
-                if (res == 0)
-                {
-                    Mensajes.TextSubAlert = "Base de datos fuera de rango. Puede que esté obsolela o existen muchas versiones de por medio respecto a la que usted tenía.";
-                    res = BuscarEnRegistros("apolo * .db");// expresion regular
-                    if (res == 0)
-                    {
-                        Mensajes.TextSubAlert = "Base de datos no encontrada. asegurese de descargarla y tenerla en sus ficheros.";
-                    }
-                }
-            }
-            await App.Database.SaveUpVersionActual(new VersionActual() { Id = 1, Version = res.ToString() });
-        }
-        private int BuscarEnRegistros(string nombre)
-        {
-            int version = 0;
             listArt.Clear();
-
-            // operaciones para buscar en los ficheros
-            // hacer la consulta a la DB para pedir artistas y proyectos
-            // darle a listArt y listPro sus valores
-            // sacar la version del encontrado
-
+            listVin.Clear();
+            listArt = await App.Database.GetArtistas();
+            listVin = await App.Database.GetProyectos();
             Ordenar(listArt);
-            labelCantArtistas.Text = listArt.Count.ToString();
-            return version;
+        }
+        public static SQLiteAsyncConnection databaseApolo;
+        public async void Pick()
+        {
+            try
+            {
+                var result = await FilePicker.PickAsync();
+                if (result != null)
+                {
+                    if (result.FileName.EndsWith(".db3", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var stream = await result.OpenReadAsync();
+                        AccederCerrar(result);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                Mensajes.TextSubAlert = "Ha ocurrido un error. Intente otra vez";
+                await Navigation.PushModalAsync(new Mensajes());
+            }
+        }
+        private async void AccederCerrar(FileResult file)
+        {
+            if (file != null)
+            {
+
+                //--------------------------Acceder y llenar lista-------------------------------------------------
+                string direrc = Path.Combine(file.FullPath,"");
+                if (File.Exists(direrc))
+                {
+                    listArt.Clear();
+                    listVin.Clear();
+
+                    SQLite.SQLiteOpenFlags Flags =
+                    SQLite.SQLiteOpenFlags.ReadOnly |
+                    SQLite.SQLiteOpenFlags.SharedCache;
+
+                    await Database._database.CloseAsync();
+
+                    databaseApolo = new SQLiteAsyncConnection(direrc, Flags);
+                    listArt = GetArtistas();
+                    listVin = GetProyectos();
+                    Ordenar(listArt);
+                    ActualizarDB();
+                    labelCantArtistas.Text = listArt.Count.ToString();
+                    await databaseApolo.CloseAsync();
+                    Database._database = new SQLiteAsyncConnection(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "apoloApp.db3"));
+                }
+            }
+        }
+        private async void ActualizarDB()
+        {
+            var borrarArt = await App.Database.GetArtistas();
+            borrarArt.ForEach(async x => await App.Database.DeleteArtistas(x));
+            var borrarVin = await App.Database.GetProyectos();
+            borrarVin.ForEach(async x => await App.Database.DeleteProyectos(x));
+            listArt.ForEach(async x => await App.Database.SaveArtistas(x));
+            listVin.ForEach(async x => await App.Database.SaveProyectos(x));
+        }
+        private List<Proyectos> GetProyectos()
+        {
+            var x = databaseApolo.Table<Proyectos>().ToListAsync();
+            List<Proyectos> res = x.Result;
+            return res;
+        }
+        private List<Artistas> GetArtistas()
+        {
+            var x = databaseApolo.Table<Artistas>().ToListAsync();
+            List<Artistas> res = x.Result;
+            return res;
         }
         public async void Ordenar(List<Artistas> list)
         {
@@ -129,7 +119,8 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.Nombre,
-                        Segundario = item.Manifestacion.ToString()
+                        Segundario = item.Manifestacion.ToString(),
+                        Foto = item.Foto != null ? ImageSource.FromStream(() => new MemoryStream(item.Foto)) : "perfil.jpeg"
                     });
                 }
             }
@@ -141,10 +132,11 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.Nombre,
-                        Segundario = item.FechaNacimiento.Day + "/" + item.FechaNacimiento.Month + "/" + item.FechaNacimiento.Year
+                        Segundario = item.FechaNacimiento.Day + "/" + item.FechaNacimiento.Month + "/" + item.FechaNacimiento.Year,
+                        Foto = item.Foto != null ? ImageSource.FromStream(() => new MemoryStream(item.Foto)) : "perfil.jpeg"
                     });
                 };
-                
+
             }
             if (orden.Tipo == "Organizacion")
             {
@@ -155,7 +147,8 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = organizaciones,
-                        Segundario = item.Nombre
+                        Segundario = item.Nombre,
+                        Foto = item.Foto != null ? ImageSource.FromStream(() => new MemoryStream(item.Foto)) : "perfil.jpeg"
                     });
                 }
             }
@@ -167,7 +160,8 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.Manifestacion.ToString(),
-                        Segundario = item.Nombre
+                        Segundario = item.Nombre,
+                        Foto = item.Foto != null ? ImageSource.FromStream(() => new MemoryStream(item.Foto)) : "perfil.jpeg"
                     });
                 }
             }
@@ -179,11 +173,12 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.ActividadProfecional,
-                        Segundario = item.Nombre
+                        Segundario = item.Nombre,
+                        Foto = item.Foto != null ? ImageSource.FromStream(() => new MemoryStream(item.Foto)) : "perfil.jpeg"
                     });
                 }
             }
-            
+
 
             listArtistas.ItemsSource = listOrdered;
         }
@@ -194,13 +189,7 @@ namespace ArtistasLocales
             {
                 await App.Database.SaveOpcionesOrdenar(new OpcionesOrdenar() { Tipo = "Nombre" });
             }
-            var version = await App.Database.GetIdVersionActual(1);
-            if (ordenamiento == null)
-            {
-                await App.Database.SaveVersionActual(new VersionActual() { Version = "0" });
-            }
         }
-
         private async void ButtonFavoritos_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new PageFavoritos());
@@ -214,51 +203,29 @@ namespace ArtistasLocales
             await Navigation.PushPopupAsync(new Ordenamiento());
             MessagingCenter.Subscribe<Ordenamiento, string>(this, "Ordenamiento", async (s, arg) =>
             {
-                ByDefault();
+                Ordenar(listArt);
             });
         }
         private async void listArtistas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var elem = (ListViewUsers)e.SelectedItem;
             ArtSelected = listArt.Find(x => x.Nombre == elem.Principal);
-            if(ArtSelected == null) ArtSelected = listArt.Find(x => x.Nombre == elem.Segundario);
+            if (ArtSelected == null) ArtSelected = listArt.Find(x => x.Nombre == elem.Segundario);
             await Navigation.PushModalAsync(new Perfil());
         }
         private async void Info_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new Info());
         }
-    }
-
-
-    public class Artistas
-    {
-        //[PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-        public byte[] Foto { get; set; }
-        public string Manifestacion { get; set; }
-        public string ActividadProfecional { get; set; }
-        public string Fijo { get; set; }
-        public string Movil { get; set; }
-        public string Correo { get; set; }
-        public string DireccionWeb { get; set; }
-        public string Curriculo { get; set; }
-        public string Organizaciones { get; set; }
-    }
-    public class Proyectos
-    {
-        //[PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
-        public int IdArt { get; set; }
-        public string Nombre { get; set; }
-        public string Lugar { get; set; }
-        public string Descripcion { get; set; }
+        private void NewDB_Clicked(object sender, EventArgs e)
+        {
+            Pick();
+        }
     }
     public class ListViewUsers
     {
         public string Principal { get; set; }
         public string Segundario { get; set; }
+        public ImageSource Foto { get; set; }
     }
 }

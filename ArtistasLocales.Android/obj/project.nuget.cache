@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NKkeFgxI8v96rhw9Q2g6Zgbeg1Xk8PqK2sMg5tXJHlbDHwUVcBBwCGGhDWpQx6jfwMyyCv/gymL78Z0npnDArw==",
+  "dgSpecHash": "YXNnniClbpfCW8qMKxc3ox+Baf/PzQHa2zRnZkee5yv6kUp+5dusXCEcQV40EeiT5mwjc7PTq3Wh6DuG2IOw8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nayhan\\source\\repos\\ArtistasLocales\\ArtistasLocales.Android\\ArtistasLocales.Android.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Nayhan\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\xam.plugins.messaging\\5.2.0\\xam.plugins.messaging.5.2.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.0.0\\xamarin.android.arch.core.common.1.0.0.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\xamarin.android.arch.lifecycle.common\\1.0.3\\xamarin.android.arch.lifecycle.common.1.0.3.nupkg.sha512",

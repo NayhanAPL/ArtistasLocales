@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lXtp61jy5Q1+A0a+LkZbeub+aNLXvtFD6UKUX2wXTwM+WNGOhuHauDY1Wv4nm5HvswPP8Z1mIATo1Cow/JoIRQ==",
+  "dgSpecHash": "zsR9960DOv8rXX1M8VTE72OaHmRXwJxTrqWtp/Ue7HPZ/s+aMY5D5hx4EOKynuf9WBxekhzOhpIxAsXNToeG+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nayhan\\source\\repos\\ArtistasLocales\\ArtistasLocales.iOS\\ArtistasLocales.iOS.csproj",
   "expectedPackageFiles": [
@@ -90,6 +90,7 @@
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Nayhan\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Nayhan\\.nuget\\packages\\xam.plugins.messaging\\5.2.0\\xam.plugins.messaging.5.2.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
