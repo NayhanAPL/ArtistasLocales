@@ -5,6 +5,7 @@ using Rg.Plugins.Popup.Extensions;
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -23,9 +24,10 @@ namespace ArtistasLocales
             Inicio();
             ByDefault();
         }
-        public static List<Artistas> listArt = new List<Artistas>();
-        public static Artistas ArtSelected = new Artistas();
-        public static List<Proyectos> listVin = new List<Proyectos>();
+        public static List<Artist> listArt = new List<Artist>();
+        public static Artist ArtSelected = new Artist();
+        public static List<Proyecto> listVin = new List<Proyecto>();
+        public static ObservableCollection<ListViewUsers> listOrdered = new ObservableCollection<ListViewUsers>();
 
         public async void ByDefault()
         {
@@ -60,7 +62,6 @@ namespace ArtistasLocales
         {
             if (file != null)
             {
-
                 //--------------------------Acceder y llenar lista-------------------------------------------------
                 string direrc = Path.Combine(file.FullPath,"");
                 if (File.Exists(direrc))
@@ -75,8 +76,22 @@ namespace ArtistasLocales
                     await Database._database.CloseAsync();
 
                     databaseApolo = new SQLiteAsyncConnection(direrc, Flags);
-                    listArt = GetArtistas();
+                    var AlistArt = GetArtistas();
                     listVin = GetProyectos();
+                    AlistArt.ForEach(x => listArt.Add(new Artist() {
+                        ActividadProfecional = x.ActividadProfecional,
+                        Correo = x.Correo,
+                        Curriculo = x.Curriculo,
+                        DireccionWeb = x.DireccionWeb,
+                        FechaNacimiento = x.FechaNacimiento,
+                        Fijo = x.Fijo,
+                        Foto = x.Foto,
+                        Manifestacion = x.Manifestacion,
+                        Movil = x.Movil,
+                        Nombre = x.Nombre,
+                        Organizaciones = x.Organizaciones,
+                        Id = x.Id
+                    }));
                     Ordenar(listArt);
                     ActualizarDB();
                     labelCantArtistas.Text = listArt.Count.ToString();
@@ -88,28 +103,55 @@ namespace ArtistasLocales
         private async void ActualizarDB()
         {
             var borrarArt = await App.Database.GetArtistas();
-            borrarArt.ForEach(async x => await App.Database.DeleteArtistas(x));
+            foreach (var item in borrarArt)
+            {
+                await App.Database.DeleteArtistas(item);
+            }
             var borrarVin = await App.Database.GetProyectos();
-            borrarVin.ForEach(async x => await App.Database.DeleteProyectos(x));
-            listArt.ForEach(async x => await App.Database.SaveArtistas(x));
-            listVin.ForEach(async x => await App.Database.SaveProyectos(x));
+            foreach (var item in borrarVin)
+            {
+                await App.Database.DeleteProyectos(item);
+            }
+            listArt.ForEach(async x => await App.Database.SaveArtistas(new Artist() { 
+            ActividadProfecional = x.ActividadProfecional,
+            Correo = x.Correo,
+            Curriculo = x.Curriculo,
+            DireccionWeb = x.DireccionWeb,
+            FechaNacimiento = x.FechaNacimiento,
+            Fijo = x.Fijo, 
+            Foto = x.Foto,
+            Manifestacion = x.Manifestacion,
+            Movil = x.Movil,
+            Nombre = x.Nombre,
+            Organizaciones = x.Organizaciones
+            }));
+            listVin.ForEach(async x => await App.Database.SaveProyectos(new Proyecto() { 
+            NameArt = x.NameArt,
+            Descripcion = x.Descripcion,
+            Lugar = x.Lugar,
+            Nombre = x.Nombre
+            }));
+            var fav = await App.Database.GetFavoritos();
+            foreach (var item in fav)
+            {
+                await App.Database.DeleteFavoritos(item);
+            }
         }
-        private List<Proyectos> GetProyectos()
+        private List<Proyecto> GetProyectos()
         {
-            var x = databaseApolo.Table<Proyectos>().ToListAsync();
-            List<Proyectos> res = x.Result;
+            var x = databaseApolo.Table<Proyecto>().ToListAsync();
+            List<Proyecto> res = x.Result;
             return res;
         }
-        private List<Artistas> GetArtistas()
+        private List<Artista> GetArtistas()
         {
-            var x = databaseApolo.Table<Artistas>().ToListAsync();
-            List<Artistas> res = x.Result;
+            var x = databaseApolo.Table<Artista>().ToListAsync();
+            List<Artista> res = x.Result;
             return res;
         }
-        public async void Ordenar(List<Artistas> list)
+        public async void Ordenar(List<Artist> list)
         {
-
-            List<ListViewUsers> listOrdered = new List<ListViewUsers>();
+            listOrdered.Clear();
             var orden = await App.Database.GetIdOpcionesOrdenar(1);
             if (orden.Tipo == "Nombre")
             {
@@ -132,7 +174,7 @@ namespace ArtistasLocales
                     listOrdered.Add(new ListViewUsers()
                     {
                         Principal = item.Nombre,
-                        Segundario = item.FechaNacimiento.Day + "/" + item.FechaNacimiento.Month + "/" + item.FechaNacimiento.Year,
+                        Segundario = item.FechaNacimiento,
                         Foto = item.Foto != null ? ImageSource.FromStream(() => new MemoryStream(item.Foto)) : "perfil.jpeg"
                     });
                 };
@@ -165,7 +207,7 @@ namespace ArtistasLocales
                     });
                 }
             }
-            if (orden.Tipo == "ActividadProfecional")
+            if (orden.Tipo == "Profecion")
             {
                 var iList = list.OrderBy(x => x.ActividadProfecional);
                 foreach (var item in iList)
@@ -181,6 +223,7 @@ namespace ArtistasLocales
 
 
             listArtistas.ItemsSource = listOrdered;
+            
         }
         private async void Inicio()
         {
@@ -227,5 +270,20 @@ namespace ArtistasLocales
         public string Principal { get; set; }
         public string Segundario { get; set; }
         public ImageSource Foto { get; set; }
+    }
+    public class Artista
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string FechaNacimiento { get; set; }
+        public byte[] Foto { get; set; }
+        public string Manifestacion { get; set; }
+        public string ActividadProfecional { get; set; }
+        public string Fijo { get; set; }
+        public string Movil { get; set; }
+        public string Correo { get; set; }
+        public string DireccionWeb { get; set; }
+        public string Curriculo { get; set; }
+        public string Organizaciones { get; set; }
     }
 }
