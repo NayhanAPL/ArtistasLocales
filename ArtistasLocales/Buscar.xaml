@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistasLocales.Buscar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="5" Margin="0" HasShadow="True" BackgroundColor="White">
+                <StackLayout>
+                    <Entry Placeholder="Buscar" PlaceholderColor="Gray" TextColor="Black" WidthRequest="380" Margin="10,20,10,10" x:Name="EntryBusqueda" TextChanged="EntryBusqueda_TextChanged"/>
+                    <Button Text="Buscar por >" TextColor="CornflowerBlue" BackgroundColor="White" FontAttributes="Bold" FontSize="18" HorizontalOptions="Start" x:Name="ButtonFiltroBusqueda" Clicked="ButtonFiltroBusqueda_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <ListView x:Name="listArtistasBusqueda" ItemSelected="listArtistasBusqueda_ItemSelected" RowHeight="100" SeparatorColor="Gray">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Frame Margin="15" CornerRadius="35" WidthRequest="70" Padding="0" HeightRequest="70">
+                                    <Image Source="{Binding Foto}" x:Name="ImagenPerfil" WidthRequest="70" HeightRequest="70"/>
+                                </Frame>
+                                <StackLayout x:Name="stackNombre">
+                                    <Label Text="{Binding Principal}" Margin="10,10,0,0" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Segundario}" Margin="10,0,10,0" TextColor="DarkSlateGray" FontSize="16" FontAttributes="Italic"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

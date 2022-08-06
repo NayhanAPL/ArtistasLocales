@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pages:PopupPage  xmlns:Pages="http://rotorgames.com" 
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="ArtistasLocales.FiltroBuscar">
+    <ContentPage.Content>
+        <StackLayout Padding="0" x:Name="stackPopup" Margin="130,80,0,0" WidthRequest="400" HorizontalOptions="End" VerticalOptions="Start">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Text="Nombre" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderNombre" Clicked="OrderNombre_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="1" Text="Manifestación" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderManifestacion" Clicked="OrderManifestacion_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="2" Text="Organizaciones" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderOrganizaciones" Clicked="OrderOrganizaciones_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="3" Text="Currículo" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderCurriculo" Clicked="OrderCurriculo_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="4" Text="Profesión" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderProfecion" Clicked="OrderProfecion_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="5" Text="Móvil" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderMovil" Clicked="OrderMovil_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="6" Text="Fijo" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderFijo" Clicked="OrderFijo_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="7" Text="Correo" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderCorreo" Clicked="OrderCorreo_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="8" Text="Dirección Web" WidthRequest="180" FontSize="Body" IsVisible="false" x:Name="OrderWeb" Clicked="OrderWeb_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</Pages:PopupPage>

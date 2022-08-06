@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistasLocales.Info">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BorderColor="Gray" HasShadow="True" Margin="0" Padding="20">
+                    <StackLayout>
+                        <Label Text="Apolo" TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start"/>
+                        <Label Text="Esta es una aplicación que facilitará su comunicación, búsqueda y conocimiento en lo que a los artista de el municipio de Habana del Este respecta. Sus actualizaciones serán distribuidas a través de medios de comunicación aprovados por la casa de la cultura del municipio." TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="Gray" HasShadow="True" Margin="0" Padding="20">
+                    <StackLayout>
+                        <Label Text="Función de la aplicación" TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start"/>
+                        <Label Text="Ordenamiento: Puede ordenar la lista de artistas según el criterio de su preferencia (Nombre, Edad, Manifestación, Organizaciones, Proyectos, Profesión)." TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                        <Label Text="Descarga: Al seleccionar este boton deberá buscar en su sistema de ficheros un base de datos llamada Apolo con extención .db3. Una vez que lo seleccione su aplicación será actualizada automaticamente. Este proceso debe realizarce cada vez que descargue una actualización de la app." TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                        <Label Text="Búsqueda: Puede realizar una búsqueda por todos los perfiles de artistas filtrando por un criterio determinado por usted (Nombre, Manifestación, Organizaciones, Proyectos, Profesión, Currículo, Móvil, Fijo, Correo, Dirección Web)." TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                        <Label Text="Favoristos: La página de favoritos contendrá una lista con cada perfil de artista que usted marque como favorito en la página del mismo. de este modo tendrá acceso más rápido y eficiente a los perfiles de su preferencia y mayor uso." TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                        <Label Text="Perfil: Al seleccionar un perfil de artista podrá acceder a la información completa del mismo, además podrá llamar, enviar mensajes, correos y acceder a su página oficial en caso de existir estos datos." TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="Gray" HasShadow="True" Margin="0" Padding="20">
+                    <StackLayout>
+                        <Label Text="Créditos" TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start"/>
+                        <Label Text="Diseño y Desarrollo: Nayhan Provedo" TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                        <Label Text="Correo: nayhanprovedolabrada@gmail.com" TextColor="LightSlateGray" FontSize="17" HorizontalOptions="Start"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistasLocales.Perfil">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Grid.Row="0" BackgroundColor="White" Margin="120,20,120,0" Padding="0" BorderColor="Gray" HeightRequest="160" WidthRequest="160" CornerRadius="100">
+                    <Image Source="perfil.jpeg" x:Name="ImagenPerfil" HeightRequest="160" WidthRequest="160"/>
+                </Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" Text="Nombre y Apellido" x:Name="LabelNombre" FontSize="23" HorizontalOptions="Center" VerticalOptions="Start" TextColor="CornflowerBlue" FontAttributes="Bold" Margin="15"/>
+                    <Button Grid.Column="2" Text="&#xf006;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="Favorito" HorizontalOptions="Start" Margin="10" Clicked="Favorito_Clicked" CornerRadius="20" Padding="0" TextColor="Gray" BackgroundColor="White" WidthRequest="40" HeightRequest="40"/>
+                </Grid>
+                <Grid HorizontalOptions="Center" Margin="100,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="&#xf879;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonLlamar" CornerRadius="25" Clicked="ButtonLlamar_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="1" Text="&#xf075;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonMensaje" CornerRadius="25" Clicked="ButtonMensaje_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="2" Text="&#xf003;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonCorreo" CornerRadius="25" Clicked="ButtonCorreo_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="3" Text="&#xf064;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonWeb" CornerRadius="25" Clicked="ButtonWeb_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                </Grid>
+                <Frame Margin="0" Padding="15,10">
+                    <StackLayout>
+                        <Label Text="Manifestación Artística" TextColor="Black" FontSize="17" FontAttributes="Bold"/>
+                        <Label Text="manifestacion" x:Name="LabelManifestacion" FontSize="19" TextColor="DarkSlateGray"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="0,0" Padding="15,10">
+                    <StackLayout>
+                        <Label Text="Actividad Profesional" TextColor="Black" FontSize="17" FontAttributes="Bold"/>
+                        <Label Text="Actividad Profesional" x:Name="LabelProfesion" FontSize="19" TextColor="DarkSlateGray"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="0,0" Padding="15,10">
+                    <StackLayout>
+                        <Label Text="Organizaciones" TextColor="Black" FontSize="17" FontAttributes="Bold"/>
+                        <Label Text="Organizaciones" x:Name="LabelOrganizaciones" FontSize="19" TextColor="DarkSlateGray"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="0,0" Padding="15,10">
+                    <StackLayout>
+                        <Label Text="Vinculaciones a Proyectos" TextColor="Black" FontSize="17" FontAttributes="Bold"/>
+                        <Label Text="Vinculaciones a Proyectos" x:Name="LabelVinculaciones" FontSize="17" TextColor="DarkSlateGray"/>
+                        <Button CornerRadius="10" Padding="0" Text="leer más" TextTransform="None" x:Name="LeerMasVinculaciones" WidthRequest="100" HeightRequest="50" BackgroundColor="White" HorizontalOptions="Start" Clicked="LeerMasVinculaciones_Clicked" TextColor="CornflowerBlue" Font="16"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="0,0,0,10" Padding="15,10">
+                    <StackLayout>
+                        <Label Text="Currículo" TextColor="Black" FontSize="17" FontAttributes="Bold"/>
+                        <Label Text="Curriculo" x:Name="LabelCurriculo" FontSize="17" TextColor="DarkSlateGray"/>
+                        <Button CornerRadius="10" Padding="0" Text="leer más" TextTransform="None" x:Name="LeerMasCurriculo" WidthRequest="100" HeightRequest="50" BackgroundColor="White" HorizontalOptions="Start" Clicked="LeerMasCurriculo_Clicked" TextColor="CornflowerBlue" Font="16"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Fecha de nacimiento:" FontSize="16" Margin="15,0,0,0" TextColor="Black" HorizontalOptions="Start"/>
+                    <Label Text="00/00/00" x:Name="LabelEdad" Margin="15,0,0,15" FontSize="16" TextColor="Gray" HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Correo:" FontSize="16" Margin="15,0,0,0" TextColor="Black" HorizontalOptions="Start"/>
+                    <Label Text="" x:Name="LabelCorreo" Margin="15,0,0,20" FontSize="16" TextColor="Gray" HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Dirección web:" FontSize="16" Margin="15,0,0,0" TextColor="Black" HorizontalOptions="Start"/>
+                    <Label Text="" x:Name="LabelWeb" Margin="15,0,0,20" FontSize="16" TextColor="Gray" HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                    <Label Text="Móvil:" FontSize="16" Margin="15,0,0,0" TextColor="Black" HorizontalOptions="Start"/>
+                    <Label Text="" x:Name="LabelMovil" FontSize="16" TextColor="Gray" HorizontalOptions="Start"/>
+                    <Label Text="        Fijo:" FontSize="16" TextColor="Black" HorizontalOptions="Start"/>
+                    <Label Text="" x:Name="LabelFijo" FontSize="16" TextColor="Gray" HorizontalOptions="Start"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

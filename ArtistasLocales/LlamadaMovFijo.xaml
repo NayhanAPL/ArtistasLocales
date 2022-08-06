@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pages:PopupPage  xmlns:Pages="http://rotorgames.com" 
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="ArtistasLocales.LlamadaMovFijo">
+    <ContentPage.Content>
+        <StackLayout Padding="0" x:Name="stackPopup" Margin="100,300,0,0" WidthRequest="200" HorizontalOptions="Start" VerticalOptions="Start">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Text="Movil" WidthRequest="180" FontSize="Body" x:Name="Movil" Clicked="Movil_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+                <Button Grid.Row="1" Text="Fijo" WidthRequest="180" FontSize="Body" x:Name="Fijo" Clicked="Fijo_Clicked" HorizontalOptions="Center" VerticalOptions="Center" TextColor="CornflowerBlue" BackgroundColor="White" BorderColor="LightGray" BorderWidth="2" CornerRadius="20"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</Pages:PopupPage>
