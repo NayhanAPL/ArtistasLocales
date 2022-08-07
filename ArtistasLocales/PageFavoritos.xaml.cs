@@ -48,8 +48,8 @@ namespace ArtistasLocales
 
         private async void listFavoritos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var elem = (Artist)e.SelectedItem;
-            MainPage.ArtSelected = MainPage.listArt.Find(x => x.Nombre == elem.Nombre);
+            var elem = (ListViewUsers)e.SelectedItem;
+            MainPage.ArtSelected = MainPage.listArt.Find(x => x.Nombre == elem.Principal);
             await Navigation.PushModalAsync(new Perfil());
         }
     }

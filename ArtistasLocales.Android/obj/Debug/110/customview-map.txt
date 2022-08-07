@@ -1,4 +1,5 @@
 @string/appbar_scrolling_view_behavior;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
 adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 alpha;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\anim\enterfromleft.xml
@@ -10,6 +11,7 @@ androidx.appcompat.widget.Toolbar;C:\Users\Nayhan\source\repos\ArtistasLocales\A
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\layout\rootlayout.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\layout\shellcontent.xml
 attr;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\values\attrs.xml
+background;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 cache-path;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\48\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -26,6 +28,7 @@ crc64720bb2db43a66fe9.FormsViewPager;C:\Users\Nayhan\source\repos\ArtistasLocale
 declare-styleable;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\values\attrs.xml
 external-cache-path;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\48\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\48\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Debug\110\lp\49\jl\res\layout\bottomtablayout.xml

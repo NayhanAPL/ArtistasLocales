@@ -27,7 +27,7 @@ namespace ArtistasLocales
         public static List<Artist> listArt = new List<Artist>();
         public static Artist ArtSelected = new Artist();
         public static List<Proyecto> listVin = new List<Proyecto>();
-        public static ObservableCollection<ListViewUsers> listOrdered = new ObservableCollection<ListViewUsers>();
+        public static List<ListViewUsers> listOrdered = new List<ListViewUsers>();
 
         public async void ByDefault()
         {
@@ -221,7 +221,8 @@ namespace ArtistasLocales
                 }
             }
 
-
+            labelCantArtistas.Text = listArt.Count.ToString();
+            listArtistas.ItemsSource = null;
             listArtistas.ItemsSource = listOrdered;
             
         }
@@ -246,7 +247,9 @@ namespace ArtistasLocales
             await Navigation.PushPopupAsync(new Ordenamiento());
             MessagingCenter.Subscribe<Ordenamiento, string>(this, "Ordenamiento", async (s, arg) =>
             {
+                await Task.Delay(1000);
                 Ordenar(listArt);
+                await Task.Delay(1000);
             });
         }
         private async void listArtistas_ItemSelected(object sender, SelectedItemChangedEventArgs e)

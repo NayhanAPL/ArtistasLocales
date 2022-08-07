@@ -4,7 +4,7 @@
              x:Class="ArtistasLocales.PageFavoritos">
     <ContentPage.Content>
         <StackLayout>
-            <Frame HasShadow="True" BorderColor="Black" Margin="0" Padding="0">
+            <Frame HasShadow="True" BorderColor="Gray" Margin="0" Padding="0">
                 <StackLayout>
                     <Label Text="Favoritos" HorizontalOptions="Center" Margin="20" FontSize="24" TextColor="CornflowerBlue" FontAttributes="Bold"/>
                 </StackLayout>

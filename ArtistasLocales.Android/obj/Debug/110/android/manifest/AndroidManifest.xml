@@ -16,8 +16,8 @@
   <uses-permission android:name="@string/abc_action_bar_up_description" />
   <uses-permission android:name="android.permission." />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="ArtistasLocales.Android" android:requestLegacyExternalStorage="true" android:theme="@style/MainTheme">
-    <activity android:name="crc6463b7bced3c169cb2.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="ArtistasLocales" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="ArtistasLocales.Android" android:requestLegacyExternalStorage="true" android:theme="@style/MainTheme">
+    <activity android:name="crc6463b7bced3c169cb2.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="Apolo" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
