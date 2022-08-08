@@ -16,7 +16,7 @@
 
 	/* 1: ArtistasLocales.dll */
 	/* uncompressed_file_size */
-	.long	123904
+	.long	124928
 	/* loaded */
 	.byte	0
 	/* data */

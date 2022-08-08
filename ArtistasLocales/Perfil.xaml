@@ -24,17 +24,19 @@
                     <Label Grid.Column="1" Text="Nombre y Apellido" x:Name="LabelNombre" FontSize="23" HorizontalOptions="Center" VerticalOptions="Start" TextColor="CornflowerBlue" FontAttributes="Bold" Margin="15"/>
                     <Button Grid.Column="2" Text="&#xf006;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="Favorito" HorizontalOptions="Start" Margin="10" Clicked="Favorito_Clicked" CornerRadius="20" Padding="0" TextColor="Gray" BackgroundColor="White" WidthRequest="40" HeightRequest="40"/>
                 </Grid>
-                <Grid HorizontalOptions="Center" Margin="100,0">
+                <Grid HorizontalOptions="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Text="&#xf879;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonLlamar" CornerRadius="25" Clicked="ButtonLlamar_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
-                    <Button Grid.Column="1" Text="&#xf075;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonMensaje" CornerRadius="25" Clicked="ButtonMensaje_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
-                    <Button Grid.Column="2" Text="&#xf003;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonCorreo" CornerRadius="25" Clicked="ButtonCorreo_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
-                    <Button Grid.Column="3" Text="&#xf0ac;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonWeb" CornerRadius="25" Clicked="ButtonWeb_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="1" Text="&#xf879;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonLlamar" CornerRadius="25" Clicked="ButtonLlamar_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="2" Text="&#xf075;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonMensaje" CornerRadius="25" Clicked="ButtonMensaje_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="3" Text="&#xf003;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonCorreo" CornerRadius="25" Clicked="ButtonCorreo_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
+                    <Button Grid.Column="4" Text="&#xf0ac;" FontSize="17" FontFamily="{StaticResource FontAwesomeSolid}" x:Name="ButtonWeb" CornerRadius="25" Clicked="ButtonWeb_Clicked" TextColor="CornflowerBlue" BackgroundColor="White" WidthRequest="50" HeightRequest="50"/>
                 </Grid>
                 <Frame Margin="0" Padding="15,10">
                     <StackLayout>

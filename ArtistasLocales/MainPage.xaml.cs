@@ -155,6 +155,7 @@ namespace ArtistasLocales
             var orden = await App.Database.GetIdOpcionesOrdenar(1);
             if (orden.Tipo == "Nombre")
             {
+                listOrdered.Clear();
                 var iList = list.OrderBy(x => x.Nombre);
                 foreach (var item in iList)
                 {
@@ -168,6 +169,7 @@ namespace ArtistasLocales
             }
             if (orden.Tipo == "Edad")
             {
+                listOrdered.Clear();
                 var iList = list.OrderBy(x => x.FechaNacimiento);
                 foreach (var item in iList)
                 {
@@ -182,6 +184,7 @@ namespace ArtistasLocales
             }
             if (orden.Tipo == "Organizacion")
             {
+                listOrdered.Clear();
                 var iList = list.OrderBy(x => x.Organizaciones);
                 foreach (var item in iList)
                 {
@@ -196,6 +199,7 @@ namespace ArtistasLocales
             }
             if (orden.Tipo == "Manifestacion")
             {
+                listOrdered.Clear();
                 var iList = list.OrderBy(x => x.Manifestacion);
                 foreach (var item in iList)
                 {
@@ -209,6 +213,7 @@ namespace ArtistasLocales
             }
             if (orden.Tipo == "Profecion")
             {
+                listOrdered.Clear();
                 var iList = list.OrderBy(x => x.ActividadProfecional);
                 foreach (var item in iList)
                 {
@@ -247,9 +252,7 @@ namespace ArtistasLocales
             await Navigation.PushPopupAsync(new Ordenamiento());
             MessagingCenter.Subscribe<Ordenamiento, string>(this, "Ordenamiento", async (s, arg) =>
             {
-                await Task.Delay(1000);
                 Ordenar(listArt);
-                await Task.Delay(1000);
             });
         }
         private async void listArtistas_ItemSelected(object sender, SelectedItemChangedEventArgs e)

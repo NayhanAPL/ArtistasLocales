@@ -231,10 +231,10 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Xamarin.Google.Android.Material.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Xamarin.Google.Android.Material.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\jl\542f1d89-f9fd-4d8e-863f-a646b5bcf92a.jar
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\jl\b647eba8-9679-4054-b8c9-f6897d1cabd4.jar
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_AndroidXJetifyJavaLibraryRules.stamp
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\6090c556-8487-4c30-a7e5-e12f04341dbc.cfg
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\87deb346-7173-47c2-adad-eb8e539d8394.txt
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\c2c0a718-dffb-40eb-8e14-a99e719f5d23.cfg
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\e795b260-bc2a-4fc0-abde-2e46cb402ae0.txt
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_AndroidXJetifyProguardRules.stamp
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\_AndroidXJetifyProguardRules.jetify
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\typemaps.arm64-v8a.s

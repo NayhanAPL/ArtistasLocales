@@ -97,3 +97,14 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhone\Debu
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhone\Debug\ArtistasLocales.iOS.csproj.CopyComplete
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhone\Debug\ArtistasLocales.iOS.exe
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhone\Debug\ArtistasLocales.iOS.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\System.IO.Compression.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\System.Net.Http.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\Plugin.Media.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\Plugin.Media.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\Plugin.Messaging.Abstractions.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\Plugin.Messaging.Abstractions.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhone\Debug\Plugin.Messaging.dll

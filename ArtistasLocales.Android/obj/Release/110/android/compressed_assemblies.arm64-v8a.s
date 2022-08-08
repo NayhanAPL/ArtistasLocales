@@ -17,7 +17,7 @@
 
 	/* 1: ArtistasLocales.dll */
 	/* uncompressed_file_size */
-	.word	123904
+	.word	124928
 	/* loaded */
 	.byte	0
 	/* data */

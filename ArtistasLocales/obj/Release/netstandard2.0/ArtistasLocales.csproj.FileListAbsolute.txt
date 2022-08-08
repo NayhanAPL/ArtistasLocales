@@ -6,6 +6,7 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Release\netstan
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Release\netstandard2.0\System.Drawing.Common.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Release\netstandard2.0\Mono.Android.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Release\netstandard2.0\Mono.Android.xml
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\ArtistasLocales.csproj.AssemblyReference.cache
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\ArtistasLocales.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\App.xaml.g.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\Buscar.xaml.g.cs
@@ -25,4 +26,3 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstan
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\ArtistasLocales.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\ref\ArtistasLocales.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\ArtistasLocales.pdb
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\obj\Release\netstandard2.0\ArtistasLocales.csproj.AssemblyReference.cache
