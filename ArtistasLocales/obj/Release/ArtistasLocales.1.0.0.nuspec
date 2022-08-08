@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ArtistasLocales</id>
+    <version>1.0.0</version>
+    <authors>ArtistasLocales</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="3.1.27" exclude="Build,Analyzers" />
+        <dependency id="Rg.Plugins.Popup" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="SQLite" version="3.13.0" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugin.Media" version="5.0.1" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugins.Messaging" version="5.2.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="5.0.0.2012" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.8.116" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales\bin\Release\netstandard2.0\ArtistasLocales.dll" target="lib\netstandard2.0\ArtistasLocales.dll" />
+  </files>
+</package>
