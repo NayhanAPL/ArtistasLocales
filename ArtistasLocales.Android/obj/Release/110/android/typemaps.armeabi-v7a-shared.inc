@@ -49,26 +49,26 @@
 	.section	.rodata.map_aname.8,"aMS",%progbits,1
 	.type	.L.map_aname.8, %object
 .L.map_aname.8:
-	.asciz	"ArtistasLocales.Android"
-	.size	.L.map_aname.8, 24
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	.L.map_aname.8, 28
 
 	.section	.rodata.map_aname.9,"aMS",%progbits,1
 	.type	.L.map_aname.9, %object
 .L.map_aname.9:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	.L.map_aname.9, 28
+	.asciz	"Xamarin.AndroidX.Browser"
+	.size	.L.map_aname.9, 25
 
 	.section	.rodata.map_aname.10,"aMS",%progbits,1
 	.type	.L.map_aname.10, %object
 .L.map_aname.10:
-	.asciz	"Xamarin.AndroidX.Browser"
-	.size	.L.map_aname.10, 25
+	.asciz	"Xamarin.Google.Android.Material"
+	.size	.L.map_aname.10, 32
 
 	.section	.rodata.map_aname.11,"aMS",%progbits,1
 	.type	.L.map_aname.11, %object
 .L.map_aname.11:
-	.asciz	"Xamarin.Google.Android.Material"
-	.size	.L.map_aname.11, 32
+	.asciz	"ArtistasLocales.Android"
+	.size	.L.map_aname.11, 24
 
 	.section	.rodata.map_aname.12,"aMS",%progbits,1
 	.type	.L.map_aname.12, %object

@@ -4,6 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <UserSecretsId>287771d1-418d-4c96-8859-c5df898c6a34</UserSecretsId>
+    <AssemblyName>ArtistasLocales</AssemblyName>
+    <RootNamespace>ArtistasLocales</RootNamespace>
+    <ApplicationIcon></ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

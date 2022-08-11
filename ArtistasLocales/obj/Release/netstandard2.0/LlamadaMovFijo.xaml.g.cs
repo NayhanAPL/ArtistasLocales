@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ArtistasLocales.LlamadaMovFijo.xaml", "LlamadaMovFijo.xaml", typeof(global::ArtistasLocales.LlamadaMovFijo))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Apolo.LlamadaMovFijo.xaml", "LlamadaMovFijo.xaml", typeof(global::ArtistasLocales.LlamadaMovFijo))]
 
 namespace ArtistasLocales {
     

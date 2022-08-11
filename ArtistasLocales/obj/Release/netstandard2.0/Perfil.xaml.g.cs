@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ArtistasLocales.Perfil.xaml", "Perfil.xaml", typeof(global::ArtistasLocales.Perfil))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Apolo.Perfil.xaml", "Perfil.xaml", typeof(global::ArtistasLocales.Perfil))]
 
 namespace ArtistasLocales {
     
@@ -20,10 +20,10 @@ namespace ArtistasLocales {
         private global::Xamarin.Forms.Image ImagenPerfil;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label LabelNombre;
+        private global::Xamarin.Forms.Button Favorito;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button Favorito;
+        private global::Xamarin.Forms.Label LabelNombre;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button ButtonLlamar;
@@ -77,8 +77,8 @@ namespace ArtistasLocales {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Perfil));
             ImagenPerfil = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "ImagenPerfil");
-            LabelNombre = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelNombre");
             Favorito = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Favorito");
+            LabelNombre = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelNombre");
             ButtonLlamar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonLlamar");
             ButtonMensaje = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonMensaje");
             ButtonCorreo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonCorreo");

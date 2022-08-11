@@ -21,6 +21,8 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.SwipeRefreshLayout.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"ArtistasLocales.Android.dll",
+		"ArtistasLocales.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Microsoft.Bcl.HashCode.dll",
@@ -63,8 +65,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
-		"ArtistasLocales.Android.dll",
-		"ArtistasLocales.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

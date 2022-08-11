@@ -5,8 +5,6 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\com.companyname.artistaslocales-Signed.aab
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\com.companyname.artistaslocales-Signed.apk
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\com.companyname.artistaslocales-Signed.apk.idsig
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\ArtistasLocales.dll
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\ArtistasLocales.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\build.props
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\adb.props
@@ -107,8 +105,6 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\link.flag
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\ArtistasLocales.Android.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\ArtistasLocales.Android.pdb
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\ArtistasLocales.dll
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\ArtistasLocales.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\FormsViewGroup.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\FormsViewGroup.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Java.Interop.dll
@@ -231,10 +227,7 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Xamarin.Google.Android.Material.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Xamarin.Google.Android.Material.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\jl\b647eba8-9679-4054-b8c9-f6897d1cabd4.jar
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_AndroidXJetifyJavaLibraryRules.stamp
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\c2c0a718-dffb-40eb-8e14-a99e719f5d23.cfg
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\e795b260-bc2a-4fc0-abde-2e46cb402ae0.txt
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_AndroidXJetifyProguardRules.stamp
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\_AndroidXJetifyProguardRules.jetify
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\typemaps.arm64-v8a.s
@@ -550,3 +543,10 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\bin\Release\ArtistasLocales.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\android\assets\ArtistasLocales.pdb
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\jl\28ef0705-ff66-4dcd-89ac-1cc3308df157.jar
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\1e956bd0-eb77-4878-a54f-94b2ec6f341f.cfg
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.Android\obj\Release\110\androidx\proguard\924dff64-6862-47fb-b092-404cd28c32d5.txt

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ArtistasLocales.FiltroBuscar.xaml", "FiltroBuscar.xaml", typeof(global::ArtistasLocales.FiltroBuscar))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Apolo.FiltroBuscar.xaml", "FiltroBuscar.xaml", typeof(global::ArtistasLocales.FiltroBuscar))]
 
 namespace ArtistasLocales {
     

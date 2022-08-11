@@ -89,8 +89,6 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimul
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\ArtistasLocales.dll
-C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\ArtistasLocales.pdb
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimulator\Release\actool\_PartialAppManifest.items
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimulator\Release\actool\_BundleResourceWithLogicalName.items
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimulator\Release\actool\_ProcessedImageAssetsPath.items
@@ -106,3 +104,5 @@ C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimul
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimulator\Release\ArtistasLocales.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimulator\Release\ArtistasLocales.iOS.csproj.CopyComplete
 C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\obj\iPhoneSimulator\Release\ArtistasLocales.iOS.exe
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\ArtistasLocales.dll
+C:\Users\Nayhan\source\repos\ArtistasLocales\ArtistasLocales.iOS\bin\iPhoneSimulator\Release\ArtistasLocales.pdb
